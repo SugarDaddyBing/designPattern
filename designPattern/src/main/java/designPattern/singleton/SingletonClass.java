@@ -22,3 +22,13 @@ public class SingletonClass {
     return SingletonInstance.sc;
   }
 }
+/*
+ * 个人理解：
+ * 这个套路是用来解决  一个全局的类  频繁的创建与销毁 ，控制实例数目，节省系统资源
+ * 用在哪： 多线程共同处理一个文件
+ *
+ *
+ *
+ * how to do： 无则创建 仅此一次 有则返回 还是它呗
+ *
+ * */
